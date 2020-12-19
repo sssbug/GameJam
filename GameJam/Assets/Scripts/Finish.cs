@@ -10,7 +10,6 @@ public class Finish : MonoBehaviour //düzenleme yapılacak skor
     List<int> usedIndexs;
     string[] randomNames = new string[6];
 
-
     UIManager uIManager;
     Score score;
 
