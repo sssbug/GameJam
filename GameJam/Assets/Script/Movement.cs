@@ -7,10 +7,6 @@ public class Movement : MonoBehaviour
     protected Touch touch;
     [SerializeField] public float rotatespeed = 5f;
     // Rigidbody rigidbody;
-    void Start()
-    {
-        // rigidbody = GetComponent<Rigidbody>();
-    }
 
     // Update is called once per frame
     private void FixedUpdate()
