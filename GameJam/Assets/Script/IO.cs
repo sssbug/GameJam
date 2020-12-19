@@ -14,7 +14,7 @@ public class IO : MonoBehaviour
         //rigidbody.velocity = transform.forward * speed;
         if (Input.touchCount > 0)
         {
-            InvokeRepeating("DirectUpdate", 1, 0);
+            DirectUpdate();
         }
         transform.position += -transform.up * m_moveSpeed * Time.deltaTime;
     }
