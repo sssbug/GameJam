@@ -15,9 +15,13 @@ public class Movement : MonoBehaviour
     float time = 0f;
     float timeDelay = 0.5f;
     bool delay = false;
+
+    Finish finish;
+
     // Rigidbody rigidbody;
     void Start()
     {
+        finish = FindObjectOfType<Finish>();
         // rigidbody = GetComponent<Rigidbody>();
     }
 
@@ -70,7 +74,7 @@ public class Movement : MonoBehaviour
     {
         if (other.CompareTag("gameArea"))
         {
-            Destroy(gameObject);
+            finish.FinishGame();
         }
     }
 }
