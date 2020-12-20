@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
     protected Touch touch;
     [SerializeField] public float rotatespeed = 5f;
     [SerializeField] private GameObject gift;
+    //[SerializeField] private GameObject geyik;
+    //[SerializeField] private GameObject geyik1;
     GoalManager gifts;
     float time = 0f;
     float timeDelay = 0.5f;
@@ -47,6 +49,11 @@ public class Movement : MonoBehaviour
             rotationY = Quaternion.Euler(0f, touch.deltaPosition.x * rotatespeed * Time.deltaTime, 0f);
 
             transform.rotation = rotationY * transform.rotation;
+            /*if (geyik.transform.rotation.x < 103 || geyik.transform.rotation.x > 77)
+            {
+                geyik.transform.rotation = rotationY * geyik.transform.rotation;
+                geyik1.transform.rotation = rotationY * geyik1.transform.rotation;
+            }*/
         }
         if (touch.phase == TouchPhase.Ended)
         {
