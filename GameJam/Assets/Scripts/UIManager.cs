@@ -13,11 +13,11 @@ public class UIManager : MonoBehaviour
 
     public void WriteTimer(float time)
     {
-        timerText.text = time.ToString("0");
+        timerText.text ="00: "+ time.ToString("0");
     }
 
     public void WriteScore(int score)
     {
-        scoreText.text = score.ToString();
+        scoreText.text = "x " + score.ToString();
     }
 }
